@@ -1,6 +1,6 @@
-import primary96 from './Images/primary96.jpg'
-import pocket96 from './Images/pocket96.jpg'
-import pocket16 from './Images/pocket16.jpg'
+import primary96 from '../assets/images/primary96.jpg'
+import pocket96 from '../assets/images/pocket96.jpg'
+import pocket16 from '../assets/images/pocket16.jpg'
 
 export default {
   primary96,
