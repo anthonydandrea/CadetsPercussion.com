@@ -7,6 +7,11 @@ export default  [
   secondary_color: "#f2ef3e"
 },
 {
+  year: 2019,
+  primary_color: "#ff0000",
+  secondary_color: "#ffffff"
+},
+{
   year: 2009,
   primary_color: "#008080",
   secondary_color: "#F1DAA4"

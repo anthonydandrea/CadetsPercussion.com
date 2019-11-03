@@ -36,6 +36,7 @@ function App() {
       return (
         <React.Fragment>
         <div className="color-row">
+        <h1 className="year">{obj.year}</h1>
 
         <div className="shorts">
         {
@@ -45,8 +46,6 @@ function App() {
         }
         {getSecondaryColorTags(obj)}
         </div>
-
-        <h1 className="year">{obj.year}</h1>
 
         </div>
         </React.Fragment>

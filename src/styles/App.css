@@ -18,7 +18,9 @@ html {
 
 .year {
   position: absolute;
-  margin: -220px auto;
+  /* margin: -0px auto; */
+  margin-top: 160px;
+  margin-left: -5px;
   z-index: -10000;
   width: 80%;
 }
