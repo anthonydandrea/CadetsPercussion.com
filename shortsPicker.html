@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <style>
+      .border {
+        border: 3px solid black;
+      }
+      .leg {
+        width: 250px;
+        height: 550px;
+        background: grey;
+      }
+      .right {
+        margin-left: 250px;
+        position: absolute;
+        margin-top: -3px;
+      }
+      .pocket {
+        width: 150px;
+        height: 200px;
+        margin-left: 50px;
+        margin-top: 50px;
+      }
+      .left-color {
+        margin-left: 125px;
+      }
+      .right-color {
+        margin-left: 180px;
+      }
+    </style>
+
+    <div id='left' class='border leg left'>
+    <div  id='right' class='border leg right'/>
+    <div id='pocket' class='border pocket'>
+    </div>
+  </div>
+</div>
+
+    <input type='color' oninput='changeColor(this,"left")' class='left-color' />
+    <input type='color' oninput='changeColor(this,"right")' class='right-color' />
+
+    <script>
+    function changeColor(t,which) {
+      document.getElementById(which).style.background = t.value
+      if(which === 'left')
+        document.getElementById('pocket').style.background = t.value
+    }
+    </script>
+
+
+  </body>
+</html>
