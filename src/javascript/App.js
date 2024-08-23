@@ -29,30 +29,27 @@ function getSecondaryColorTags(obj) {
 }
 function App() {
   return (
-    <React.Fragment>
     <div className="App">
-    <h1>Cadets Percussion Shorts</h1>
+    <img src="/cadets-logo.png" alt="The Cadets" className="cadets-logo"/>
+    <h2 className="sub-header">Percussion Shorts</h2>
     {Data.sort((i,j) => {if(i.year < j.year) return -1; else return 1}).map(obj => {
       return (
-        <React.Fragment>
         <div className="color-row">
-        <h1 className="year">{obj.year}</h1>
+            <h1 className="year">{obj.year}</h1>
 
-        <div className="shorts">
-        {
-          obj.primary_image ?
-          <img className="primary-color-side" src={obj.primary_image} />
-          : <div className="primary-color-side" style={{background: obj.primary_color}} />
-        }
-        {getSecondaryColorTags(obj)}
-        </div>
+            <div className="shorts">
+            {
+              obj.primary_image ?
+              <img className="primary-color-side" src={obj.primary_image} />
+              : <div className="primary-color-side" style={{background: obj.primary_color}} />
+            }
+            {getSecondaryColorTags(obj)}
+            </div>
 
         </div>
-        </React.Fragment>
       )
     })}
     </div>
-    </React.Fragment>
   );
 }
 
