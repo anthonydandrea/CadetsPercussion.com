@@ -31,8 +31,13 @@ function App() {
   return (
     <div className="App">
     <img src="/cadets-logo.png" alt="The Cadets" className="cadets-logo"/>
-    <h2 className="sub-header">Percussion Shorts</h2>
-    {Data.sort((i,j) => {if(i.year < j.year) return -1; else return 1}).map(obj => {
+      <hr className="line" />
+    <h2 className="sub-header">Percussion Shorts Archive</h2>
+      <hr className="line" />
+      <div className="shorts-description" > <p className="tribute-message">A tribute to The Cadets Percussion section tradition of wearing matching shorts, symbolic of the members' unity as a team.</p></div>
+      <hr className="line" />
+      <div className="contact" > <p className="contact-message">To add missing years, send an email to anthonydandrea3@gmail.com</p></div>
+    {Data.sort((i,j) => {if(i.year < j.year) return 1; else return -1}).map(obj => {
       return (
         <div className="color-row">
             <h1 className="year">{obj.year}</h1>

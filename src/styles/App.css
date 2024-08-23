@@ -1,5 +1,5 @@
 html {
-  background: #333;
+  background: #111;
   color: white;
 }
 .App {
@@ -7,7 +7,7 @@ html {
 }
 
 .header {
-font-size: 4em;
+font-size: 3em;
  background: linear-gradient(to bottom right, #821b31 ,50%, white);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -22,9 +22,44 @@ font-size: 4em;
 
 .sub-header {
 margin: 10px auto;
-font-size: 2em;
+font-size: 3em;
 /* font-decoration: underline; */
 
+}
+
+.line {
+color: white;
+height: 0px;
+width: 80vw;
+min-width: 300px;
+max-width: 1000px;
+}
+
+.shorts-description {
+    width: 70%;
+    margin: auto;
+}
+.tribute-message {
+font-family: "Marck Script", cursive;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.2em;
+  }
+
+  .contact {
+    width: 80%;
+    margin: auto;
+    padding-bottom: 20px;
+  }
+  .contact-message {
+    font-size: .9em;
+    color: grey;
+  }
+
+@media only screen and (max-width: 700px), only screen and (max-device-width: 700px) {
+    .sub-header {
+        font-size: 2em;
+    }
 }
 
 .color-row {
@@ -69,7 +104,7 @@ flex-direction: column;
   /* margin-top: 20px; */
   /* border: 2px solid black; */
   display: flex;
-  box-shadow: 0px 30px 58px #555;
+  box-shadow: 0px 0px 60px #444;
 }
 
 .primary-color-side {

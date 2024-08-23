@@ -115,7 +115,7 @@ export default  [
 },
 {
   year: 2021,
-  primary_color: "#ffb71c",
+  primary_color: "#ffc124",
   secondary_color: "#4094b8"
 },
 //{
@@ -125,7 +125,7 @@ export default  [
 //},
 {
   year: 2023,
-  primary_color: "#1a0101",
+  primary_color: "#2b0000",
   secondary_color: "black"
 },
 ]
