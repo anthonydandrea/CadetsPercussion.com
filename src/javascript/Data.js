@@ -118,11 +118,12 @@ export default  [
   primary_color: "#ffc124",
   secondary_color: "#4094b8"
 },
-//{
-//  year: 2022,
-//  primary_color: "black",
-//  secondary_color: "#2dc3ff"
-//},
+{
+  year: 2022,
+  primary_color: "#f43978",
+  secondary_color: "#3a4a81",
+  pocket_image: Images.pocket22
+},
 {
   year: 2023,
   primary_color: "#2b0000",

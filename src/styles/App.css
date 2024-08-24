@@ -104,7 +104,7 @@ flex-direction: column;
   /* margin-top: 20px; */
   /* border: 2px solid black; */
   display: flex;
-  box-shadow: 0px 0px 60px #444;
+  box-shadow: 0px 0px 70px #333;
 }
 
 .primary-color-side {
