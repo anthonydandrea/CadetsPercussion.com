@@ -3,8 +3,8 @@ import Images from './Images'
 export default  [
 {
   year: 2013,
-  primary_color: "#a442f4",
-  secondary_color: "#f2ef3e"
+  primary_color: "#46147a",
+  secondary_color: "#fee45c"
 },
 {
   year: 2019,
@@ -23,8 +23,17 @@ export default  [
 },
 {
   year: 2009,
-  primary_color: "#008080",
-  secondary_color: "#F1DAA4"
+  primary_color: "#96b6b9",
+  secondary_color: "#ffe68b"
+},
+{
+  year: 1995,
+  section: "HB",
+  primary_image: Images.pocket95HbPrimary,
+  primary_image_repeating: true,
+  secondary_image: Images.pocket95HbSeconday,
+  secondary_image_repeating: true,
+  pocket_image: Images.pocket96
 },
 {
   year: 1996,
@@ -39,8 +48,8 @@ export default  [
 },
 {
   year: 2003,
-  primary_color: "#127002",
-  secondary_color: "#f9be34"
+  primary_color: "#678c33",
+  secondary_color: "#fcc431"
 },
 {
   year: 2005,
@@ -54,8 +63,13 @@ export default  [
 },
 {
   year: 2000,
-  primary_color: "blue",
-  secondary_color: "grey"
+  primary_color: "#c2b7a4",
+  secondary_color: "#1c137d"
+},
+{
+  year: 2001,
+  primary_color: "#95a0d0",
+  secondary_color: "#8b2979"
 },
 {
   year: 2004,
@@ -64,8 +78,8 @@ export default  [
 },
 {
   year: 2002,
-  primary_color: "#8271ba",
-  secondary_color: "#d84751"
+  primary_color: "#5f5ca9",
+  secondary_color: "#c01b3b"
 },
 {
   year: 2006,
@@ -79,23 +93,23 @@ export default  [
 },
 {
   year: 2008,
-  primary_color: "#1160aa",
+  primary_color: "#252c97",
   secondary_color: "black"
 },
 {
   year: 2010,
-  primary_color: "silver",
-  secondary_color: "#4f0909"
+  primary_color: "#d9cdc0",
+  secondary_color: "#69141b"
 },
 {
   year: 2011,
-  primary_color: "#71bfce",
-  secondary_color: "#f99393"
+  primary_color: "#6bc1dd",
+  secondary_color: "#d1643c"
 },
 {
   year: 2012,
-  primary_color: "#4cb2a4",
-  secondary_color: "#c4606f"
+  primary_color: "#64c8a1",
+  secondary_color: "#c91229"
 },
 {
   year: 2014,
@@ -107,6 +121,13 @@ export default  [
   primary_color: "#1abfed",
   secondary_color: "#773369"
 },
+//{
+//  year: 2016,
+//    section: "CWP",
+//  primary_color: "#dbdbd3",
+//  secondary_color: "#dbdbd3",
+//    pocket_color: "#1f76e1",
+//},
 {
   year: 2016,
   primary_color: "#191b26",

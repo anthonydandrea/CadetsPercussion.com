@@ -13,12 +13,17 @@ function getPocketTags(obj) {
 
 function getSecondaryColorTags(obj) {
   if(obj.secondary_image) {
+      if(obj.secondary_image_repeating) {
+      return (<div className="secondary-color-side" style={{backgroundImage: `url(${obj.secondary_image})`}} />)
+
+      } else {
     return (
       <div className="secondary-color-side">
       <img className="image-color" src={obj.secondary_image} />
       {getPocketTags(obj)}
       </div>
     )
+      }
   } else {
     return (
       <div className="secondary-color-side" style={{background: obj.secondary_color}}>
@@ -40,12 +45,15 @@ function App() {
     {Data.sort((i,j) => {if(i.year < j.year) return 1; else return -1}).map(obj => {
       return (
         <div className="color-row">
-            <h1 className="year">{obj.year}</h1>
+            <h1 className="year">{obj.year + " " + (obj.section ?? "")}</h1>
 
             <div className="shorts">
             {
               obj.primary_image ?
-              <img className="primary-color-side" src={obj.primary_image} />
+                obj.primary_image_repeating ?
+                    <div className='primary-color-side' style={{backgroundImage: `url(${obj.primary_image})`}} />
+                :
+                  <img className="primary-color-side" src={obj.primary_image} />
               : <div className="primary-color-side" style={{background: obj.primary_color}} />
             }
             {getSecondaryColorTags(obj)}
